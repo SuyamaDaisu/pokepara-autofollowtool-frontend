@@ -22,8 +22,8 @@ export default function Home() {
   const [modalMessage, setModalMessage] = useState('')
   const wsRef = useRef<WebSocket | null>(null)
 
-  const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
-  const WS_BASE = API_BASE.replace('http', 'ws')
+  const API_BASE = 'http://160.251.171.205:8000'
+  const WS_BASE = 'ws://160.251.171.205:8000'
 
   // WebSocket connection
   useEffect(() => {
